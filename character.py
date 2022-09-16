@@ -16,6 +16,9 @@ class Character:
     def take_damage(self, damage):
         self.hp  -= abs(damage)
 
+    def take_healing(self, damage):
+        self.hp  += abs(damage)
+
     def stats(self):
         return \
             f' === {self.name} ===\n' \
